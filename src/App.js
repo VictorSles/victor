@@ -1,23 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import HelloWorld from './components/HelloWorld';
+import Eventos from './components/Eventos';
 
 function App() {
+  function plus(a,b){
+    return a+b
+  }
+  const immge = "https://via.placeholder.com/150"
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='MyFirstDiv'>
+      <h1>Meu primeiro teste</h1>
+      <p>Meu primeiro parágrafo</p>
+      <p>Soma: {plus(2,3)}</p>
+      <img src={immge} alt='imagem'/>
+      <HelloWorld/>
+      <Eventos/>
     </div>
   );
 }
