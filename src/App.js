@@ -12,6 +12,7 @@ import Proptypes from './components/Proptypes';
 import UseState from './components/UseState';
 import MetodosParaEventos from './components/Eventos/MetodosParaEventos';
 import RederizacaoCondicional from './components/RenderizacaoCondicional';
+import RenderizacaoDeListas from './components/RenderizacaoDeListas';
 
 function App() {
   function plus(a,b){
@@ -19,6 +20,7 @@ function App() {
   }
   const sobrenome = "Sales"
   const immge = "https://via.placeholder.com/150"
+  const lista = ['Israel','Sales']
   return (
     <div className='MyFirstDiv'>
       <h1>Meu primeiro teste</h1>
@@ -49,6 +51,8 @@ function App() {
       <MetodosParaEventos/>
       <hr/>
       <RederizacaoCondicional/>
+      <hr/>
+      <RenderizacaoDeListas itens={lista}/>
     </div>
   );
 }
