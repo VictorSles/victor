@@ -32,7 +32,7 @@ function App() {
       <hr/>
       <Props nome="Israel"/><Props nome={sobrenome}/>
       <hr/>
-      <MoreProps nome="Israel" idade={21} sexo="Maculino" variavel/>
+      <MoreProps nome="Israel" idade={21} sexo="Maculino"/>
       <hr/>
       <Structure nome="Israel" idade={21} sexo="Masculino"/>
       <hr/>

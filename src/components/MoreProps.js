@@ -9,4 +9,7 @@ function MoreProps(props){           {/* Posso criar varias props para serem cha
         </div>
     );
 };
+MoreProps.defaultProps = {
+    variavel: 'Manaus',
+};
 export default MoreProps
