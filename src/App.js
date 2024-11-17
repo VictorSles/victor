@@ -13,46 +13,49 @@ import UseState from './components/UseState';
 import MetodosParaEventos from './components/Eventos/MetodosParaEventos';
 import RederizacaoCondicional from './components/RenderizacaoCondicional';
 import RenderizacaoDeListas from './components/RenderizacaoDeListas';
+import ReactRouter from './components/React-Router/ReactRouter';
 
 function App() {
-  function plus(a,b){
-    return a+b
+  function plus(a, b) {
+    return a + b
   }
   const sobrenome = "Sales"
   const immge = "https://via.placeholder.com/150"
-  const lista = ['Israel','Sales']
+  const lista = ['Israel', 'Sales']
   return (
     <div className='MyFirstDiv'>
       <h1>Meu primeiro teste</h1>
       <p>Meu primeiro parágrafo</p>
-      <p>Soma: {plus(2,3)}</p>
-      <img src={immge} alt='imagem' className={styles.minhaImagem}/>
-      <hr/>
-      <HelloWorld/>
-      <hr/>
-      <Props nome="Israel"/><Props nome={sobrenome}/>
-      <hr/>
-      <MoreProps nome="Israel" idade={21} sexo="Maculino"/>
-      <hr/>
-      <Structure nome="Israel" idade={21} sexo="Masculino"/>
-      <hr/>
-      <Fragments/>
-      <hr/>
-      <Proptypes nome="Israel" idade="1990" sexo="Masculino"/>
-      <hr/>
-      <Eventos_1/>
-      <hr/>
-      <Eventos_2 parametro_1='Israel' parametro_2={2003}/>
-      <hr/>
-      <Eventos_3/>
-      <hr/>
-      <UseState/>
-      <hr/>
-      <MetodosParaEventos/>
-      <hr/>
-      <RederizacaoCondicional/>
-      <hr/>
-      <RenderizacaoDeListas itens={lista}/>
+      <p>Soma: {plus(2, 3)}</p>
+      <img src={immge} alt='imagem' className={styles.minhaImagem} />
+      <hr />
+      <HelloWorld />
+      <hr />
+      <Props nome="Israel" /><Props nome={sobrenome} />
+      <hr />
+      <MoreProps nome="Israel" idade={21} sexo="Maculino" />
+      <hr />
+      <Structure nome="Israel" idade={21} sexo="Masculino" />
+      <hr />
+      <Fragments />
+      <hr />
+      <Proptypes nome="Israel" idade="1990" sexo="Masculino" />
+      <hr />
+      <Eventos_1 />
+      <hr />
+      <Eventos_2 parametro_1='Israel' parametro_2={2003} />
+      <hr />
+      <Eventos_3 />
+      <hr />
+      <UseState />
+      <hr />
+      <MetodosParaEventos />
+      <hr />
+      <RederizacaoCondicional />
+      <hr />
+      <RenderizacaoDeListas itens={lista} />
+      <hr />
+      <ReactRouter />
     </div>
   );
 }
